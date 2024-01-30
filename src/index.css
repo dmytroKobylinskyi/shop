@@ -73,6 +73,69 @@ header ul.nav li{
 header ul.nav li:hover{
   opacity: 0.5;
 }
+
+
+/* #endregion */
+
+/* #region shoppingBar */
+header .shop-cart-button{
+  float:right;
+  cursor :pointer;
+  transition: color, transform 500ms ease;
+}
+
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active{
+  color:#dc3d3d;
+  transform: scale(1.5);
+}
+
+header{
+  position: relative;
+}
+
+header .shop-cart{
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 450px;
+  background: #fafafa;
+  -webkit-box-shadow: 3px 5px 56px 11px rgba(167,191,199,1);
+  -moz-box-shadow: 3px 5px 56px 11px rgba(167,191,199,1);
+  box-shadow: 3px 5px 56px 11px rgba(167,191,199,1);
+  z-index: 1000;
+
+  padding: 20px;
+  padding-bottom:  0px;
+}
+
+header .shop-cart .item{
+  width: 100%;
+  float:left;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .empty h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item img{
+  width: 70px;
+  float:left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item p{
+  color: #797979;
+  font-weight:  600;
+}
 /* #endregion */
 
 /* #region main */
